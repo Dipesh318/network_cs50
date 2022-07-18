@@ -1,0 +1,41 @@
+.make-post{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.post{
+    padding: 20px;
+    margin: 5px;
+    background : #edebeb;
+    color: #666;
+    border-radius: 10px;
+}
+  /* in place of even we can also write 2n */
+.post:nth-of-type(even){
+    background: #f7f7f7;
+}
+
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    
+    50% {
+        left: 83%;
+    }
+    
+    100%{
+        left : 0%
+    }
+}
+
+.error {
+    position: relative;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
